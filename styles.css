@@ -1,0 +1,208 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream-1: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White-1: hsl(0, 0%, 100%);
+}
+
+*,::before,::after {
+    box-sizing: inherit;
+
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream-1);
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width:35%;
+}
+.image img{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+.text{
+    height: 500px;
+    width: 35%;
+    background-color: var(--White-1);
+    border-radius: 0 10px 10px 0;
+    padding: 28px;
+    border: none;
+    margin-bottom: 5px;
+}
+.text h1{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: var(--Very-dark-blue)
+    
+}
+.text h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:3.5px;
+    color:var(--Dark-grayish-blue);
+}
+.text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: var(--Dark-grayish-blue)
+
+}
+.prices{
+    display: flex;
+    align-items: center;
+}
+.prices .higher{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color:var(--Dark-cyan);
+    margin-right:18px ;
+}
+.prices .lower{
+    font-size: 15px ;
+    color: var(--Dark-grayish-blue)
+}
+.all .btn {
+    text-align: center;
+}
+.btn button {
+    background-color: var(--Dark-cyan);
+    color:var(--White-1);
+    width:85%;
+    height:53px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width:300px) {
+    .all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img{
+        height: 300px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        border: none;
+    }
+    .image{
+        width: 85%;
+    }
+    .text{
+        height: 520px;
+        width:85%;
+        background-color: var(--White-1);
+        border-radius: 0 0 10px 10px;
+        padding: 28px;
+        border: none;
+        margin-top: -5px;
+    }
+    }
+
+
+    @media (min-width:500px){
+        .all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            height: 300px;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            border: none;
+        }
+        .image{
+            width: 70%;
+        }
+        .text{
+            height: 520px;
+            width: 70%;
+            background-color: var(--White-1);
+            border-radius: 0 0 10px 10px;
+            padding: 28px;
+            border: none;
+            margin-top: -5px;
+        }
+
+}
+@media (min-width:700px){
+    .all{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img{
+        height: 610px;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        border: none;
+    }
+    .image{
+        width: 35%;
+        height: 610px;
+        border-radius: 10px 0 0 10px;
+    }
+    .text{
+        height: 610px;
+        width:35%;
+        background-color: var(--White-1);
+        border-radius: 0 10px 10px 0;
+        padding: 28px;
+        border: none;
+        margin-top: 5px;
+        
+    }
+
+    @media (min-width:1000px){
+        .all{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            height: 500px;
+            width: 100%;
+            border-radius: 10px 0 0 10px;
+            border: none;
+        }
+        .image{
+            width: 30%;
+            height: 500px;
+            border-radius: 10px 0 0 10px;
+        }
+        .text{
+            height: 500px;
+            width:30%;
+            background-color: var(--White-1);
+            border-radius: 0 10px 10px 0;
+            padding: 28px;
+            border: none;
+            margin-top: 5px;
+        }
+        
+        }
+    }
